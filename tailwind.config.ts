@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +56,32 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Pastel colors for the portfolio
+				peach: {
+					50: '18 95% 97%',
+					100: '18 90% 94%',
+					200: '18 85% 88%',
+					300: '18 80% 80%',
+					400: '18 75% 70%',
+					500: '18 70% 60%',
+					600: '18 65% 50%',
+				},
+				cream: {
+					50: '40 100% 98%',
+					100: '40 95% 95%',
+					200: '40 90% 90%',
+					300: '40 85% 82%',
+					400: '40 80% 74%',
+					500: '40 75% 66%',
+				},
+				lavender: {
+					50: '270 100% 98%',
+					100: '270 85% 95%',
+					200: '270 75% 90%',
+					300: '270 70% 82%',
+					400: '270 65% 74%',
+					500: '270 60% 66%',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +114,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.6s ease-out'
 			}
 		}
 	},

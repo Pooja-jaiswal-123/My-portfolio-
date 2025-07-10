@@ -1,12 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import HeroSection from "@/components/HeroSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import EducationSection from "@/components/EducationSection";
+import AchievementsSection from "@/components/AchievementsSection";
+import ContactSection from "@/components/ContactSection";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-cream-50 via-peach-50 to-lavender-50">
+      <HeroSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <EducationSection />
+      <AchievementsSection />
+      <ContactSection />
+      <ScrollToTop />
     </div>
   );
 };

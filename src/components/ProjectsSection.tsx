@@ -8,7 +8,7 @@ const ProjectsSection = () => {
       title: "Full-Stack Food Ordering App",
       description: "A complete food ordering application with user authentication, cart management, and payment integration. Built with MERN stack and deployed on Render.",
       techStack: ["React.js", "Node.js", "MongoDB", "Express.js", "Stripe"],
-      liveLink: "https://food-ordering-app.render.com",
+      liveLink: "https://food-app-frontend-92ei.onrender.com/",
       githubLink: "https://github.com/poojajaistuof/food-ordering-app",
       status: "Live",
       featured: true

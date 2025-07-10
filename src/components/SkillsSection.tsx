@@ -36,13 +36,20 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 px-4 bg-muted/30">
+    <section id="skills" className="py-24 px-4 bg-portfolio-dark">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="heading-lg mb-4">
+          <div className="flex items-center justify-center gap-2 mb-6 animate-fade-up">
+            <div className="w-12 h-0.5 bg-gradient-to-r from-portfolio-primary to-portfolio-accent"></div>
+            <span className="text-sm font-medium text-portfolio-gray tracking-wider uppercase">
+              TECHNICAL EXPERTISE
+            </span>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-portfolio-accent to-portfolio-primary"></div>
+          </div>
+          <h2 className="heading-lg mb-4 animate-fade-up stagger-1">
             Skills & <span className="text-gradient">Expertise</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-portfolio-gray max-w-2xl mx-auto animate-fade-up stagger-2">
             Technologies and tools I use to build exceptional digital experiences
           </p>
         </div>
@@ -51,24 +58,29 @@ const SkillsSection = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={category.title} 
-              className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/50 backdrop-blur-sm animate-fade-up"
+              className="group hover:shadow-2xl transition-all duration-500 border-0 glass-effect hover:border-portfolio-primary/30 animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <span className="text-2xl mr-3">{category.icon}</span>
-                  <h3 className="text-lg font-semibold">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 rounded-lg glass-effect flex items-center justify-center mr-4 group-hover:bg-portfolio-primary/20 transition-all duration-300">
+                    <span className="text-2xl">{category.icon}</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">
                     {category.title}
                   </h3>
                 </div>
                 
-                <div className="space-y-2">
-                  {category.skills.map((skill) => (
+                <div className="space-y-3">
+                  {category.skills.map((skill, skillIndex) => (
                     <div
                       key={skill}
-                      className="px-3 py-2 bg-accent/50 rounded-md text-sm font-medium text-accent-foreground"
+                      className="group/skill"
+                      style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
                     >
-                      {skill}
+                      <div className="px-4 py-2 glass-effect rounded-lg text-sm font-medium text-portfolio-gray hover:text-foreground hover:bg-portfolio-primary/10 transition-all duration-300 cursor-default border border-transparent hover:border-portfolio-primary/20">
+                        {skill}
+                      </div>
                     </div>
                   ))}
                 </div>

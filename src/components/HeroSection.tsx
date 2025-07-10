@@ -1,10 +1,9 @@
 
 import { Button } from "@/components/ui/button";
-import { Mail, Download, Github, Linkedin } from "lucide-react";
+import { Mail, Download, Github, Linkedin, ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
   const handleDownloadResume = () => {
-    // This would typically link to an actual resume file
     console.log("Download resume clicked");
   };
 
@@ -12,82 +11,109 @@ const HeroSection = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToNextSection = () => {
+    document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-purple-400/20 to-yellow-400/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Content */}
+          <div className="space-y-8 animate-fade-up">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <p className="text-sm font-medium text-muted-foreground tracking-wide uppercase animate-fade-up stagger-1">
+                  MERN Stack Developer & AI Explorer
+                </p>
+                <h1 className="heading-xl text-gradient animate-fade-up stagger-2">
+                  Er Pooja
+                  <br />
+                  Jaiswal
+                </h1>
+              </div>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-lg animate-fade-up stagger-3">
+                I'm a passionate MERN Stack Developer with a strong foundation in system design, 
+                data structures, and algorithms. Currently exploring AI and Machine Learning while 
+                building scalable digital solutions.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up stagger-4">
+              <Button 
+                onClick={handleContactMe}
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-medium"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                Let's Connect
+              </Button>
+              
+              <Button 
+                onClick={handleDownloadResume}
+                variant="outline" 
+                size="lg"
+                className="border-2 px-8 py-6 text-base font-medium"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </Button>
+            </div>
+
+            <div className="flex gap-4 animate-fade-up stagger-4">
+              <a 
+                href="https://linkedin.com/in/pooja-jaiswal-a12a98221" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 border rounded-full hover:bg-accent transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://github.com/poojajaistuof" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 border rounded-full hover:bg-accent transition-colors"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-fade-in">
+          <div className="flex justify-center lg:justify-end animate-scale-in stagger-2">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white/50 backdrop-blur-sm animate-float">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/lovable-uploads/d4e4b456-984e-46c2-964d-0000e2e03893.png"
                   alt="Er Pooja Jaiswal"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-peach-400 to-lavender-400 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-white text-2xl font-bold">👋</span>
+              
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-purple-500 to-yellow-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                <span className="text-white text-2xl">👋</span>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Hero Content */}
-          <div className="flex-1 text-center lg:text-left animate-fade-in">
-            <div className="mb-6">
-              <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-peach-600 via-lavender-500 to-peach-500 bg-clip-text text-transparent mb-4">
-                Er Pooja Jaiswal
-              </h1>
-              <p className="text-2xl lg:text-3xl text-muted-foreground font-medium mb-6">
-                MERN Stack Developer | AI & ML Explorer
-              </p>
-            </div>
-
-            <div className="mb-8 max-w-2xl">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate MERN Stack Developer with a strong foundation in system design, data structures, and algorithms. I'm currently diving deep into AI and Machine Learning, while also building full-stack web applications that solve real-world problems. Proficient in Java, Python, and C, I enjoy combining creativity with logic to build scalable and intelligent digital products.
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-              <Button 
-                onClick={handleContactMe}
-                size="lg" 
-                className="bg-gradient-to-r from-peach-500 to-peach-600 hover:from-peach-600 hover:to-peach-700 text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me
-              </Button>
-              <Button 
-                onClick={handleDownloadResume}
-                variant="outline" 
-                size="lg"
-                className="border-2 border-peach-400 text-peach-600 hover:bg-peach-50 px-8 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </Button>
-            </div>
-
-            <div className="flex gap-6 justify-center lg:justify-start">
-              <a 
-                href="https://linkedin.com/in/pooja-jaiswal-a12a98221" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 bg-white/70 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-white"
-              >
-                <Linkedin className="h-6 w-6 text-blue-600" />
-              </a>
-              <a 
-                href="https://github.com/poojajaistuof" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 bg-white/70 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-white"
-              >
-                <Github className="h-6 w-6 text-gray-800" />
-              </a>
-            </div>
-          </div>
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <button 
+            onClick={scrollToNextSection}
+            className="p-2 rounded-full border border-muted-foreground/20 hover:bg-accent transition-colors"
+          >
+            <ArrowDown className="h-5 w-5" />
+          </button>
         </div>
       </div>
     </section>

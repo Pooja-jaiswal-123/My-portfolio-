@@ -10,7 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cream-50 via-peach-50 to-lavender-50">
+    <div className="min-h-screen bg-background">
       <HeroSection />
       <SkillsSection />
       <ProjectsSection />

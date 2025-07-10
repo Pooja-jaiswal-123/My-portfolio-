@@ -4,68 +4,72 @@ import { Card, CardContent } from "@/components/ui/card";
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Frontend",
-      skills: ["React.js", "JavaScript", "TypeScript"],
-      color: "from-peach-100 to-peach-200"
+      title: "Frontend Development",
+      skills: ["React.js", "JavaScript ES6+", "TypeScript", "HTML5 & CSS3"],
+      icon: "🎨"
     },
     {
-      title: "Backend",
+      title: "Backend Development", 
       skills: ["Node.js", "Express.js", "REST APIs", "Firebase"],
-      color: "from-lavender-100 to-lavender-200"
+      icon: "⚙️"
     },
     {
-      title: "Database",
-      skills: ["MongoDB"],
-      color: "from-cream-100 to-cream-200"
+      title: "Database & Storage",
+      skills: ["MongoDB", "Database Design", "Data Modeling"],
+      icon: "🗄️"
     },
     {
-      title: "Languages",
-      skills: ["Java", "Python", "C"],
-      color: "from-peach-100 to-lavender-100"
+      title: "Programming Languages",
+      skills: ["Java", "Python", "C", "Data Structures & Algorithms"],
+      icon: "💻"
     },
     {
-      title: "Tools",
-      skills: ["Git", "GitHub", "Postman", "Figma", "VS Code"],
-      color: "from-lavender-100 to-cream-200"
+      title: "Development Tools",
+      skills: ["Git & GitHub", "Postman", "VS Code", "Figma"],
+      icon: "🛠️"
     },
     {
-      title: "Other",
-      skills: ["JWT", "System Design", "AI/ML (NumPy, Pandas, Scikit-learn)"],
-      color: "from-cream-100 to-peach-200"
+      title: "AI & Machine Learning",
+      skills: ["NumPy", "Pandas", "Scikit-learn", "Data Analysis"],
+      icon: "🤖"
     }
   ];
 
   return (
-    <section id="skills" className="py-20 px-4">
+    <section id="skills" className="py-24 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-peach-600 to-lavender-600 bg-clip-text text-transparent mb-4">
-            Skills & Technologies
+          <h2 className="heading-lg mb-4">
+            Skills & <span className="text-gradient">Expertise</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Here are the technologies and tools I work with to bring ideas to life
+            Technologies and tools I use to build exceptional digital experiences
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <Card 
               key={category.title} 
-              className={`bg-gradient-to-br ${category.color} border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in`}
+              className="group hover:shadow-lg transition-all duration-300 border-0 bg-card/50 backdrop-blur-sm animate-fade-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                  {category.title}
-                </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex items-center mb-4">
+                  <span className="text-2xl mr-3">{category.icon}</span>
+                  <h3 className="text-lg font-semibold">
+                    {category.title}
+                  </h3>
+                </div>
+                
+                <div className="space-y-2">
                   {category.skills.map((skill) => (
-                    <span
+                    <div
                       key={skill}
-                      className="px-3 py-1 bg-white/60 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 shadow-sm"
+                      className="px-3 py-2 bg-accent/50 rounded-md text-sm font-medium text-accent-foreground"
                     >
                       {skill}
-                    </span>
+                    </div>
                   ))}
                 </div>
               </CardContent>

@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'poppins': ['Poppins', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -56,42 +56,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Pastel colors for the portfolio
-				peach: {
-					50: '18 95% 97%',
-					100: '18 90% 94%',
-					200: '18 85% 88%',
-					300: '18 80% 80%',
-					400: '18 75% 70%',
-					500: '18 70% 60%',
-					600: '18 65% 50%',
-				},
-				cream: {
-					50: '40 100% 98%',
-					100: '40 95% 95%',
-					200: '40 90% 90%',
-					300: '40 85% 82%',
-					400: '40 80% 74%',
-					500: '40 75% 66%',
-				},
-				lavender: {
-					50: '270 100% 98%',
-					100: '270 85% 95%',
-					200: '270 75% 90%',
-					300: '270 70% 82%',
-					400: '270 65% 74%',
-					500: '270 60% 66%',
-				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Portfolio specific colors
+				'portfolio-primary': 'hsl(var(--portfolio-primary))',
+				'portfolio-accent': 'hsl(var(--portfolio-accent))',
+				'portfolio-dark': 'hsl(var(--portfolio-dark))',
+				'portfolio-light': 'hsl(var(--portfolio-light))',
+				'portfolio-gray': 'hsl(var(--portfolio-gray))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

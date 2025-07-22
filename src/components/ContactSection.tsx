@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -24,15 +25,37 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to a backend service
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", message: "" });
+    
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_name: "Pooja Jaiswal",
+      };
+
+      await emailjs.send(
+        'service_c3x5y64',
+        'template_kcc7msb',
+        templateParams,
+        'EClCOWP1GeUwKc9I1'
+      );
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (

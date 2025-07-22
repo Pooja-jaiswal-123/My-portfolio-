@@ -13,32 +13,36 @@ const AchievementsSection = () => {
       iconColor: "text-yellow-600"
     },
     {
-      title: "AMD AI Hackathon @ IIT Bombay",
-      description: "Invited to participate in prestigious AI hackathon at IIT Bombay",
+      title: "AMD AI Sprint IIT Bombay Winner",
+      description: "Winner of AMD AI Sprint at IIT Bombay - prestigious AI competition",
       icon: <Star className="h-6 w-6" />,
       color: "from-blue-100 to-blue-200",
-      iconColor: "text-blue-600"
+      iconColor: "text-blue-600",
+      link: "https://www.linkedin.com/posts/pooja-jaiswal-a12a98221_winner-iitbombay-amdsprint-activity-7350856336265367552-AT8p?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfeHK4Br8wJOcNxpu07pHtzeXqNk80XE_E"
     },
     {
       title: "Winner – Unstop Talent Park",
       description: "First place winner in competitive programming and problem-solving challenge",
       icon: <Award className="h-6 w-6" />,
       color: "from-green-100 to-green-200",
-      iconColor: "text-green-600"
+      iconColor: "text-green-600",
+      link: "https://unstop.com/certificate-preview/ce5a0d09-a3dd-4a5b-bbc0-76d255e5d184/"
     },
     {
       title: "Imagine Hackathon Participant",
       description: "Participated in innovative hackathon focused on creative tech solutions",
       icon: <Star className="h-6 w-6" />,
       color: "from-purple-100 to-purple-200",
-      iconColor: "text-purple-600"
+      iconColor: "text-purple-600",
+      link: "https://unstop.com/certificate-preview/34204c8e-1a6f-4ae3-84f9-9270ad01f38f"
     },
     {
-      title: "Vespera'24 Participant",
+      title: "Vesh Hackathon Participant",
       description: "Took part in technical fest showcasing cutting-edge projects and innovations",
       icon: <Award className="h-6 w-6" />,
       color: "from-pink-100 to-pink-200",
-      iconColor: "text-pink-600"
+      iconColor: "text-pink-600",
+      link: "https://unstop.com/certificate-preview/38cafb3d-c99e-4721-83e0-08c423c5bf82"
     }
   ];
 
@@ -96,6 +100,17 @@ const AchievementsSection = () => {
                       <p className="text-gray-600 text-sm leading-relaxed">
                         {achievement.description}
                       </p>
+                      {achievement.link && (
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => window.open(achievement.link, '_blank')}
+                          className="mt-3 border-peach-300 text-peach-600 hover:bg-peach-50"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-1" />
+                          View
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </CardContent>

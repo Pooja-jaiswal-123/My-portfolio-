@@ -126,7 +126,7 @@ const ContactSection = () => {
                     <span className="font-medium text-foreground">LinkedIn</span>
                   </a>
                   <a
-                    href="https://github.com/poojajaistuof"
+                    href="https://github.com/Pooja-jaiswal-123"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 p-3 bg-portfolio-gray/20 border border-portfolio-gray/30 rounded-lg hover:bg-portfolio-gray/30 transition-all duration-300 transform hover:scale-105"

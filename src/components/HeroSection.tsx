@@ -82,7 +82,7 @@ const HeroSection = () => {
                 <Linkedin className="h-5 w-5 text-portfolio-gray group-hover:text-portfolio-primary transition-colors" />
               </a>
               <a 
-                href="https://github.com/poojajaistuof" 
+                href="https://github.com/Pooja-jaiswal-123" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 glass-effect rounded-full hover:bg-portfolio-primary/20 transition-all duration-300 group"

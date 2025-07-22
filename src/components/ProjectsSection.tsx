@@ -26,14 +26,15 @@ const ProjectsSection = () => {
       title: "Advanced Authentication App",
       description: "Secure authentication system with JWT tokens, email verification, password reset, and role-based access control.",
       techStack: ["React.js", "Node.js", "JWT", "Nodemailer"],
+      liveLink: "https://authentication-app-topaz.vercel.app/",
       githubLink: "https://github.com/poojajaistuof/auth-app",
-      status: "Completed"
+      status: "Live"
     },
     {
       title: "Razorpay Clone",
       description: "Frontend clone of Razorpay payment gateway with responsive design and modern UI components.",
       techStack: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-      liveLink: "https://razorpay-clone-demo.vercel.app",
+      liveLink: "https://rajor-pay-clone.vercel.app/",
       githubLink: "https://github.com/poojajaistuof/razorpay-clone",
       status: "Live"
     },

@@ -59,13 +59,13 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-white/30 backdrop-blur-sm">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-portfolio-dark via-portfolio-card to-portfolio-dark">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-peach-600 to-lavender-600 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-portfolio-primary via-portfolio-accent to-portfolio-purple bg-clip-text text-transparent mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-portfolio-gray max-w-2xl mx-auto">
             Let's discuss opportunities, collaborations, or just have a chat about technology
           </p>
         </div>
@@ -73,22 +73,22 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="bg-gradient-to-br from-peach-100 to-lavender-100 border-0 shadow-lg animate-fade-in">
+            <Card className="glass-effect border border-portfolio-accent/20 shadow-lg shadow-portfolio-accent/10 animate-fade-in">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-gray-800">
+                <CardTitle className="text-2xl font-bold text-foreground">
                   Contact Information
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-white/60 backdrop-blur-sm rounded-full">
-                    <Mail className="h-5 w-5 text-peach-600" />
+                  <div className="p-3 bg-portfolio-primary/20 border border-portfolio-primary/30 rounded-full">
+                    <Mail className="h-5 w-5 text-portfolio-primary" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-800">Email</p>
+                    <p className="font-medium text-foreground">Email</p>
                     <a 
                       href="mailto:pooja.jaiswal.ac16@gmail.com" 
-                      className="text-gray-600 hover:text-peach-600 transition-colors"
+                      className="text-portfolio-gray hover:text-portfolio-primary transition-colors"
                     >
                       pooja.jaiswal.ac16@gmail.com
                     </a>
@@ -96,21 +96,21 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-white/60 backdrop-blur-sm rounded-full">
-                    <MapPin className="h-5 w-5 text-peach-600" />
+                  <div className="p-3 bg-portfolio-success/20 border border-portfolio-success/30 rounded-full">
+                    <MapPin className="h-5 w-5 text-portfolio-success" />
                   </div>
                   <div>
-                    <p className="font-medium text-gray-800">Location</p>
-                    <p className="text-gray-600">Saharanpur, Uttar Pradesh, India</p>
+                    <p className="font-medium text-foreground">Location</p>
+                    <p className="text-portfolio-gray">Saharanpur, Uttar Pradesh, India</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Social Links */}
-            <Card className="bg-gradient-to-br from-lavender-100 to-cream-100 border-0 shadow-lg animate-fade-in">
+            <Card className="glass-effect border border-portfolio-purple/20 shadow-lg shadow-portfolio-purple/10 animate-fade-in">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-gray-800">
+                <CardTitle className="text-2xl font-bold text-foreground">
                   Connect With Me
                 </CardTitle>
               </CardHeader>
@@ -120,19 +120,19 @@ const ContactSection = () => {
                     href="https://linkedin.com/in/pooja-jaiswal-a12a98221"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 p-3 bg-white/60 backdrop-blur-sm rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105"
+                    className="flex items-center space-x-2 p-3 bg-portfolio-accent/20 border border-portfolio-accent/30 rounded-lg hover:bg-portfolio-accent/30 transition-all duration-300 transform hover:scale-105"
                   >
-                    <Linkedin className="h-5 w-5 text-blue-600" />
-                    <span className="font-medium text-gray-700">LinkedIn</span>
+                    <Linkedin className="h-5 w-5 text-portfolio-accent" />
+                    <span className="font-medium text-foreground">LinkedIn</span>
                   </a>
                   <a
                     href="https://github.com/poojajaistuof"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 p-3 bg-white/60 backdrop-blur-sm rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105"
+                    className="flex items-center space-x-2 p-3 bg-portfolio-gray/20 border border-portfolio-gray/30 rounded-lg hover:bg-portfolio-gray/30 transition-all duration-300 transform hover:scale-105"
                   >
-                    <Github className="h-5 w-5 text-gray-800" />
-                    <span className="font-medium text-gray-700">GitHub</span>
+                    <Github className="h-5 w-5 text-portfolio-gray" />
+                    <span className="font-medium text-foreground">GitHub</span>
                   </a>
                 </div>
               </CardContent>
@@ -140,16 +140,16 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg animate-fade-in">
+          <Card className="glass-effect border border-form-border shadow-lg shadow-portfolio-primary/10 animate-fade-in">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-gray-800">
+              <CardTitle className="text-2xl font-bold text-foreground">
                 Send a Message
               </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="text-gray-700 font-medium">
+                  <Label htmlFor="name" className="text-foreground font-medium">
                     Your Name
                   </Label>
                   <Input
@@ -159,13 +159,13 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-gray-200 focus:border-peach-400 focus:ring-peach-400"
+                    className="mt-2 bg-form-background border-form-border focus:border-form-focus focus:ring-form-focus text-foreground placeholder:text-portfolio-gray"
                     placeholder="Enter your full name"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-gray-700 font-medium">
+                  <Label htmlFor="email" className="text-foreground font-medium">
                     Your Email
                   </Label>
                   <Input
@@ -175,13 +175,13 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-2 border-gray-200 focus:border-peach-400 focus:ring-peach-400"
+                    className="mt-2 bg-form-background border-form-border focus:border-portfolio-accent focus:ring-portfolio-accent text-foreground placeholder:text-portfolio-gray"
                     placeholder="Enter your email address"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-gray-700 font-medium">
+                  <Label htmlFor="message" className="text-foreground font-medium">
                     Your Message
                   </Label>
                   <Textarea
@@ -191,14 +191,14 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="mt-2 border-gray-200 focus:border-peach-400 focus:ring-peach-400 resize-none"
+                    className="mt-2 bg-form-background border-portfolio-success/50 focus:border-portfolio-success focus:ring-portfolio-success text-foreground placeholder:text-portfolio-gray resize-none"
                     placeholder="Tell me about your project or just say hello..."
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-peach-500 to-peach-600 hover:from-peach-600 hover:to-peach-700 text-white py-3 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-portfolio-primary to-portfolio-accent hover:from-portfolio-primary/80 hover:to-portfolio-accent/80 text-portfolio-dark py-3 rounded-lg text-lg font-medium shadow-lg shadow-portfolio-primary/25 hover:shadow-xl hover:shadow-portfolio-primary/40 transition-all duration-300 transform hover:scale-105 border border-portfolio-primary/30"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Send Message

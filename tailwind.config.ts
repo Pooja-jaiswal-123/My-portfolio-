@@ -56,12 +56,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Dark portfolio specific colors
+				// Enhanced portfolio color system
 				'portfolio-primary': 'hsl(var(--portfolio-primary))',
 				'portfolio-accent': 'hsl(var(--portfolio-accent))',
+				'portfolio-success': 'hsl(var(--portfolio-success))',
+				'portfolio-warning': 'hsl(var(--portfolio-warning))',
+				'portfolio-danger': 'hsl(var(--portfolio-danger))',
+				'portfolio-purple': 'hsl(var(--portfolio-purple))',
 				'portfolio-dark': 'hsl(var(--portfolio-dark))',
 				'portfolio-card': 'hsl(var(--portfolio-card))',
 				'portfolio-gray': 'hsl(var(--portfolio-gray))',
+				'form-border': 'hsl(var(--form-border))',
+				'form-focus': 'hsl(var(--form-focus))',
+				'form-background': 'hsl(var(--form-background))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

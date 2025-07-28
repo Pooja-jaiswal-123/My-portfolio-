@@ -1,0 +1,168 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2450
+>>
+stream
+BT
+/F1 18 Tf
+50 750 Td
+(Er Pooja Jaiswal) Tj
+0 -30 Td
+/F2 12 Tf
+(MERN Stack Developer & AI Explorer) Tj
+0 -40 Td
+(Email: poojajaiswal@email.com) Tj
+0 -20 Td
+(Phone: +91-XXXXXXXXXX) Tj
+0 -20 Td
+(LinkedIn: linkedin.com/in/pooja-jaiswal-a12a98221) Tj
+0 -20 Td
+(GitHub: github.com/Pooja-jaiswal-123) Tj
+
+0 -50 Td
+/F1 14 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -25 Td
+/F2 11 Tf
+(Passionate MERN Stack Developer with expertise in React.js, Node.js, MongoDB, and Express.js.) Tj
+0 -15 Td
+(Experienced in building full-stack applications with modern technologies and AI integration.) Tj
+0 -15 Td
+(Strong background in authentication systems, e-commerce platforms, and payment integration.) Tj
+
+0 -40 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -25 Td
+/F2 11 Tf
+(Frontend: React.js, JavaScript, HTML5, CSS3, Tailwind CSS, Bootstrap) Tj
+0 -15 Td
+(Backend: Node.js, Express.js, Python, Flask) Tj
+0 -15 Td
+(Database: MongoDB, MySQL) Tj
+0 -15 Td
+(Tools & Technologies: Git, JWT, Stripe, Nodemailer, Machine Learning) Tj
+0 -15 Td
+(Cloud & Deployment: Vercel, Render, GitHub Pages) Tj
+
+0 -40 Td
+/F1 14 Tf
+(FEATURED PROJECTS) Tj
+0 -25 Td
+/F2 11 Tf
+(1. Full-Stack Food Ordering App) Tj
+0 -15 Td
+(   Complete food ordering application with authentication, cart management, payment integration) Tj
+0 -15 Td
+(   Tech Stack: React.js, Node.js, MongoDB, Express.js, Stripe) Tj
+0 -15 Td
+(   Live: https://food-app-frontend-92ei.onrender.com/) Tj
+
+0 -25 Td
+(2. Forever E-commerce Website) Tj
+0 -15 Td
+(   Modern e-commerce platform with product catalog, shopping cart, user profiles) Tj
+0 -15 Td
+(   Tech Stack: React.js, Node.js, MongoDB, JWT) Tj
+0 -15 Td
+(   Live: https://forever-ecommerce.vercel.app) Tj
+
+0 -25 Td
+(3. Advanced Authentication App) Tj
+0 -15 Td
+(   Secure authentication system with JWT tokens, email verification, password reset) Tj
+0 -15 Td
+(   Tech Stack: React.js, Node.js, JWT, Nodemailer) Tj
+0 -15 Td
+(   Live: https://authentication-app-topaz.vercel.app/) Tj
+
+0 -40 Td
+/F1 14 Tf
+(EDUCATION) Tj
+0 -25 Td
+/F2 11 Tf
+(Bachelor's Degree in Engineering) Tj
+0 -15 Td
+(Specialization in Computer Science/Information Technology) Tj
+
+0 -40 Td
+/F1 14 Tf
+(ACHIEVEMENTS) Tj
+0 -25 Td
+/F2 11 Tf
+(• Successfully deployed multiple full-stack applications) Tj
+0 -15 Td
+(• Expertise in payment gateway integration and secure authentication) Tj
+0 -15 Td
+(• Experience in AI/ML integration for smart applications) Tj
+0 -15 Td
+(• Strong problem-solving skills and clean code practices) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000275 00000 n 
+0000002777 00000 n 
+0000002852 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+2922
+%%EOF

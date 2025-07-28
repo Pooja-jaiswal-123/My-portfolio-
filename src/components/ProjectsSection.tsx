@@ -42,7 +42,7 @@ const ProjectsSection = () => {
       title: "AI Meeting Scheduler",
       description: "Intelligent meeting scheduling application using AI to optimize time slots and reduce conflicts.",
       techStack: ["React.js", "Python", "Machine Learning", "Flask"],
-      githubLink: "https://github.com/poojajaistuof/ai-meeting-scheduler",
+      githubLink: "https://github.com/Pooja-jaiswal-123/smart_AI_Scheduler",
       status: "In Development"
     }
   ];

@@ -12,13 +12,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <EducationSection />
-      <AchievementsSection />
-      <ContactSection />
-      <ScrollToTop />
     </div>
   );
 };

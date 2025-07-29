@@ -7,81 +7,81 @@
 
 @layer base {
   :root {
-    --background: 222 84% 5%;
-    --foreground: 0 0% 95%;
+    --background: 218 54% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 222 84% 7%;
-    --card-foreground: 0 0% 95%;
+    --card: 218 54% 10%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 222 84% 7%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 218 54% 10%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 222 84% 5%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 218 54% 8%;
 
-    --secondary: 217 19% 27%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 218 54% 12%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 217 19% 27%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 218 54% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217 19% 27%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 218 54% 12%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217 19% 27%;
-    --input: 217 19% 27%;
-    --ring: 212 27% 84%;
+    --border: 218 54% 12%;
+    --input: 218 54% 12%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
 
-    /* Enhanced portfolio colors for better visibility */
-    --portfolio-primary: 35 100% 60%;      /* Orange/Peach */
-    --portfolio-accent: 217 91% 59%;       /* Blue */
+    /* Navy Blue Theme Portfolio Colors */
+    --portfolio-primary: 217 91% 60%;      /* Bright Blue */
+    --portfolio-accent: 142 76% 36%;       /* Green */
     --portfolio-success: 142 76% 36%;      /* Green */
-    --portfolio-warning: 54 91% 59%;       /* Yellow */
+    --portfolio-warning: 38 92% 50%;       /* Orange */
     --portfolio-danger: 0 84% 60%;         /* Red */
-    --portfolio-purple: 270 95% 75%;       /* Purple */
-    --portfolio-dark: 222 84% 5%;
-    --portfolio-card: 222 84% 7%;
-    --portfolio-gray: 0 0% 65%;
+    --portfolio-purple: 271 81% 56%;       /* Purple */
+    --portfolio-dark: 218 54% 8%;          /* Deep Navy */
+    --portfolio-card: 218 54% 10%;         /* Navy Card */
+    --portfolio-gray: 215 20% 65%;         /* Light Gray */
     
-    /* Enhanced form elements */
-    --form-border: 217 19% 35%;
-    --form-focus: 35 100% 60%;
-    --form-background: 222 84% 9%;
+    /* Navy Form Elements */
+    --form-border: 218 54% 12%;
+    --form-focus: 217 91% 60%;
+    --form-background: 218 54% 10%;
   }
 
   .dark {
-    --background: 222 84% 5%;
-    --foreground: 0 0% 95%;
+    --background: 218 54% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 222 84% 7%;
-    --card-foreground: 0 0% 95%;
+    --card: 218 54% 10%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 222 84% 7%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 218 54% 10%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 222 84% 5%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 218 54% 8%;
 
-    --secondary: 217 19% 27%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 218 54% 12%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 217 19% 27%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 218 54% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217 19% 27%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 218 54% 12%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217 19% 27%;
-    --input: 217 19% 27%;
-    --ring: 212 27% 84%;
+    --border: 218 54% 12%;
+    --input: 218 54% 12%;
+    --ring: 217 91% 60%;
   }
 }
 

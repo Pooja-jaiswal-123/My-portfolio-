@@ -6,7 +6,7 @@ const HeroSection = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
     link.href = '/resume.pdf';
-    link.download = 'Pooja_Jaiswal_Resume.pdf';
+    link.download = 'Pooja_Jaiswal_s_Resume_(4).pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

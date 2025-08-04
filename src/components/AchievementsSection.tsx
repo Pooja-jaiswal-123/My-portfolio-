@@ -65,39 +65,46 @@ const AchievementsSection = () => {
   ];
 
   return (
-    <section id="achievements" className="py-20 px-4">
+    <section id="achievements" className="py-24 px-4 bg-portfolio-card">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-peach-600 to-lavender-600 bg-clip-text text-transparent mb-4">
-            Achievements & Certifications
+          <div className="flex items-center justify-center gap-2 mb-6 animate-fade-up">
+            <div className="w-12 h-0.5 bg-gradient-to-r from-portfolio-primary to-portfolio-accent"></div>
+            <span className="text-sm font-medium text-portfolio-gray tracking-wider uppercase">
+              RECOGNITION & MILESTONES
+            </span>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-portfolio-accent to-portfolio-primary"></div>
+          </div>
+          <h2 className="heading-lg mb-4 animate-fade-up stagger-1">
+            Achievements & <span className="text-gradient">Certifications</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-portfolio-gray max-w-2xl mx-auto animate-fade-up stagger-2">
             Recognition and milestones in my journey
           </p>
         </div>
 
         {/* Achievements */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
             Achievements
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {achievements.map((achievement, index) => (
               <Card 
                 key={achievement.title}
-                className={`bg-gradient-to-br ${achievement.color} border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in`}
+                className="glass-effect border-0 hover:border-portfolio-primary/30 transition-all duration-300 transform hover:scale-105 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
-                    <div className={`p-2 bg-white/60 backdrop-blur-sm rounded-lg ${achievement.iconColor}`}>
+                    <div className="p-3 glass-effect rounded-lg text-portfolio-primary">
                       {achievement.icon}
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                      <h4 className="text-lg font-semibold text-foreground mb-2">
                         {achievement.title}
                       </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="text-portfolio-gray text-sm leading-relaxed">
                         {achievement.description}
                       </p>
                       {achievement.link && (
@@ -105,7 +112,7 @@ const AchievementsSection = () => {
                           size="sm"
                           variant="outline"
                           onClick={() => window.open(achievement.link, '_blank')}
-                          className="mt-3 border-peach-300 text-peach-600 hover:bg-peach-50"
+                          className="mt-3 border-portfolio-primary/30 text-portfolio-primary hover:bg-portfolio-primary/10"
                         >
                           <ExternalLink className="h-4 w-4 mr-1" />
                           View
@@ -121,28 +128,28 @@ const AchievementsSection = () => {
 
         {/* Certifications */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
             Certifications
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((certification, index) => (
               <Card 
                 key={certification.title}
-                className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in"
+                className="glass-effect border-0 hover:border-portfolio-accent/30 transition-all duration-300 transform hover:scale-105 animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6">
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                  <h4 className="text-lg font-semibold text-foreground mb-2">
                     {certification.title}
                   </h4>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-portfolio-gray mb-4">
                     Issued by: {certification.issuer}
                   </p>
                   <Button
                     size="sm"
                     variant="outline"
                     onClick={() => window.open(certification.link, '_blank')}
-                    className="border-peach-300 text-peach-600 hover:bg-peach-50"
+                    className="border-portfolio-accent/30 text-portfolio-accent hover:bg-portfolio-accent/10"
                   >
                     <ExternalLink className="h-4 w-4 mr-1" />
                     View Certificate

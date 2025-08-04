@@ -1,38 +1,52 @@
 
 import { Card, CardContent } from "@/components/ui/card";
+import CircularProgress from "./CircularProgress";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
       skills: ["React.js", "JavaScript ES6+", "TypeScript", "HTML5 & CSS3"],
-      icon: "🎨"
+      icon: "🎨",
+      percentage: 92
     },
     {
       title: "Backend Development", 
       skills: ["Node.js", "Express.js", "REST APIs", "Firebase"],
-      icon: "⚙️"
+      icon: "⚙️",
+      percentage: 88
     },
     {
       title: "Database & Storage",
       skills: ["MongoDB", "Database Design", "Data Modeling"],
-      icon: "🗄️"
+      icon: "🗄️",
+      percentage: 85
     },
     {
       title: "Programming Languages",
       skills: ["Java", "Python", "C", "Data Structures & Algorithms"],
-      icon: "💻"
+      icon: "💻",
+      percentage: 90
     },
     {
       title: "Development Tools",
       skills: ["Git & GitHub", "Postman", "VS Code", "Figma"],
-      icon: "🛠️"
+      icon: "🛠️",
+      percentage: 95
     },
     {
       title: "AI & Machine Learning",
       skills: ["NumPy", "Pandas", "Scikit-learn", "Data Analysis"],
-      icon: "🤖"
+      icon: "🤖",
+      percentage: 78
     }
+  ];
+
+  const expertiseSkills = [
+    { name: "React.js", percentage: 95 },
+    { name: "Node.js", percentage: 90 },
+    { name: "JavaScript", percentage: 93 },
+    { name: "Python", percentage: 87 }
   ];
 
   return (
@@ -54,6 +68,29 @@ const SkillsSection = () => {
           </p>
         </div>
 
+        {/* Expertise Progress Circles */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center text-foreground mb-8">
+            My Expertise as <span className="text-gradient">Web Developer</span>
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            {expertiseSkills.map((skill, index) => (
+              <div 
+                key={skill.name}
+                className="animate-fade-up"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <CircularProgress
+                  percentage={skill.percentage}
+                  label={skill.name}
+                  delay={index * 200}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Skills Categories */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <Card 

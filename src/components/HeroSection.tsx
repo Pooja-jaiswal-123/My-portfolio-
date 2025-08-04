@@ -21,7 +21,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden bg-background">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden bg-background">
       {/* Modern dark background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-portfolio-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -63,7 +63,7 @@ const HeroSection = () => {
                 className="accent-gradient hover:opacity-90 text-portfolio-dark px-8 py-6 text-base font-medium border-0 animate-glow"
               >
                 <Mail className="mr-2 h-5 w-5" />
-                Let's Connect
+                Hire Me
               </Button>
               
               <Button 
